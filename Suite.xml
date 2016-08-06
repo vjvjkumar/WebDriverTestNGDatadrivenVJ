@@ -1,0 +1,8 @@
+<!-- Carwale project suite -->
+<suite name="My Carwale Suite">
+	<suite-files>
+		<suite-file path="newcars.xml"></suite-file>
+		<suite-file path="sellcars.xml"></suite-file>
+		<suite-file path="usedcars.xml"></suite-file>		
+	</suite-files>
+</suite>

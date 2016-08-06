@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="com.gktech.newcars.Registration"/>
+      <class name="com.gktech.newcars.TestSuiteBase"/>
+      <class name="com.gktech.newcars.Login"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.gktech.newcars.Login">
+        <methods>
+          <include name="checkTestcaseSkip"/>
+          <include name="login" invocation-numbers="4 5 6 7 8"/>
+        </methods>
+      </class> <!-- com.gktech.newcars.Login -->
+      <class name="com.gktech.newcars.Registration">
+        <methods>
+          <include name="checkSuiteSkip"/>
+          <include name="checkTestCaseSkip"/>
+          <include name="registration" invocation-numbers="4"/>
+        </methods>
+      </class> <!-- com.gktech.newcars.Registration -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
